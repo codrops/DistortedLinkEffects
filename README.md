@@ -1,6 +1,6 @@
 # Distorted Link Effects
 
-A couple of ideas for decorative link distortion effects using SVG filters including lines, circles and squares. 
+A couple of ideas for decorative link distortion effects using SVG filters on lines, circles and squares. 
 
 ![Distorted Link Effects GIF](https://tympanus.net/codrops/wp-content/uploads/2020/03/linkline.2020-03-04-11_11_21.gif)
 
