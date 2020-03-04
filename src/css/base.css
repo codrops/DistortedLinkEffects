@@ -1,0 +1,194 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 14px;
+}
+
+body {
+	margin: 0;
+	--color-text: #c5c2b9;
+    --color-bg: #948e81;
+    --color-title: var(--color-text);
+    --color-link: #000;
+    --color-link-hover: #242222;
+    --color-menu-link: #000;
+    --color-menu-link-hover: #000;
+	color: var(--color-text);
+	background-color: var(--color-bg);
+	font-family: campaign, -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    --button-color: #fff;
+    --button-bg: #000;
+}
+
+.hidden {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+    outline: none;
+    font-size: 1.25rem;
+}
+
+a:hover,
+a:focus {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+main {
+    padding: 3rem 3rem 20vh;
+}
+
+.frame {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+.frame__title {
+	font-size: 1.55rem;
+	margin: 0 0 0.25rem;
+    font-weight: 400;
+}
+
+.frame__links {
+	display: inline;
+}
+
+.frame__links a:not(:last-child) {
+	margin-right: 1rem;
+}
+
+.title {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: upgrade, sans-serif;
+    font-size: 0.95rem;
+    margin: 0 0 3rem 0;
+    letter-spacing: 1px;
+}
+
+.title {
+    color: var(--color-title);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+
+.menu__link {
+    flex: none;
+    padding-bottom: 0.5rem;
+    font-size: 1.85rem;
+    position: relative;
+    line-height: 1;
+    color: var(--color-menu-link);
+}
+
+.menu__link:focus,
+.menu__link:hover {
+    color: var(--color-menu-link-hover);
+}
+
+.menu__link {
+    margin-bottom: 2.5rem;
+}
+
+.menu__link-inner {
+    display: block;
+    position: relative;
+    outline: 100px solid transparent;
+}
+
+.menu__link-deco {
+    outline: 120px solid transparent;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.menu--line .menu__link-deco,
+.menu--linethrough .menu__link-deco,
+.menu--twolines .menu__link-deco,
+.menu--diagonal .menu__link-deco {
+    bottom: 0;
+    left: 0;
+    height: 1px; 
+    width: 100%;
+    background: currentColor;
+}
+
+.menu--linethrough .menu__link-deco {
+    bottom: 50%;
+    height: 3px;
+}
+
+.menu--twolines .menu__link-deco {
+    height: 100%;
+    background: none;
+    border: 1px solid currentColor;
+    border-right: 0;
+    border-left: 0;
+}
+
+.menu--twolines .menu__link {
+    padding: 0.95rem 0;
+}
+
+.menu--circle .menu__link-deco,
+.menu--box .menu__link-deco {
+    left: 50%;
+    top: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin: -2.5rem 0 0 -2.5rem;
+}
+
+.menu--circle .menu__link-deco {
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.menu--box .menu__link-deco {
+    border: 1px solid black;
+}
+
+.menu--diagonal .menu__link-deco {
+    bottom: 50%;
+    width: 9rem;
+    left: 50%;
+    margin-left: -4.5rem;
+    transform: rotate(-45deg);
+}
+
+.menu__link:hover .menu__link-deco {
+    opacity: 1;
+}
+
+@media screen and (min-width: 53em) {
+    .frame {
+        text-align: left;
+    }
+    .menu {
+        text-align: left;
+        flex-direction: row;
+    }
+    .menu__link:not(:last-child) {
+        margin-right: 2.5rem;
+    }
+}

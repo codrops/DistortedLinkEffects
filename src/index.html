@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Distorted Link Effects | Codrops</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/wgj0rtt.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<!--script src="//tympanus.net/codrops/adpacks/analytics.js"></script-->
+	</head>
+	<body>
+		<svg class="hidden">
+			<defs>
+				<filter id="filter-1">
+					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp" />
+					<feOffset dx="-90" result="warpOffset" />
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warpOffset" />
+				</filter>
+				<filter id="filter-2">
+					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="20" result="warp" />
+					<feOffset dx="-90" result="warpOffset" />
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="40" in="SourceGraphic" in2="warpOffset" />
+				</filter>
+				<filter id="filter-3">
+					<feTurbulence type="fractalNoise" baseFrequency="0.15 0.02" numOctaves="3" result="warp" />
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="0" in="SourceGraphic" in2="warp" />
+				</filter>
+				<filter id="filter-4">
+					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="5" result="warp" />
+					<feOffset dx="-90" result="warpOffset" />
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="35" in="SourceGraphic" in2="warpOffset" />
+				</filter>
+				<filter id="filter-5">
+					<feTurbulence type="fractalNoise" baseFrequency="0.01 0.7" numOctaves="5" result="warp" />
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="0" in="SourceGraphic" in2="warp" />
+				</filter>
+				<filter id="filter-6">
+					<feTurbulence type="fractalNoise" baseFrequency="0.01 0.07" numOctaves="5" seed="2" result="noise"/>
+					<feDisplacementMap in="SourceGraphic" in2="warp" scale="0" xChannelSelector="R" yChannelSelector="B"/>
+				</filter>
+				<filter id="filter-7">
+					<feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="5" result="warp" />
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="90" in="SourceGraphic" in2="warp" />
+				</filter>
+			</defs>
+		</svg>
+		<main>
+			<div class="frame">
+				<h1 class="frame__title">Distorted Link Effects</h1>
+				<div class="frame__links">
+					<a href="https://tympanus.net/Development/AnimateSVGTextPath/">Previous Demo</a>
+					<a href="https://tympanus.net/codrops/?p=48230">Article</a>
+					<a href="https://github.com/codrops/DistortedLinkEffects">GitHub</a>
+				</div>
+			</div>
+			<h2 class="title">simple line</h2>
+			<nav class="menu menu--line">
+				<a class="menu__link menu__link--1" href="#">About us</a>
+				<a class="menu__link menu__link--2" href="#">Showreel</a>
+				<a class="menu__link menu__link--3" href="#">Portfolio</a>
+				<a class="menu__link menu__link--4" href="#">Case Studies</a>
+				<a class="menu__link menu__link--5" href="#">Our Team</a>
+				<a class="menu__link menu__link--6" href="#">Awards</a>
+				<a class="menu__link menu__link--7" href="#">Contact</a>
+			</nav>
+			<h2 class="title">circle</h2>
+			<nav class="menu menu--circle">
+				<a class="menu__link menu__link--1" href="#">Clothing</a>
+				<a class="menu__link menu__link--2" href="#">Bestsellers</a>
+				<a class="menu__link menu__link--3" href="#">Workwear</a>
+				<a class="menu__link menu__link--4" href="#">Activewear</a>
+				<a class="menu__link menu__link--5" href="#">Accessories</a>
+				<a class="menu__link menu__link--6" href="#">Marketplace</a>
+				<a class="menu__link menu__link--7" href="#">Brands</a>
+			</nav>
+			<h2 class="title">square</h2>
+			<nav class="menu menu--box">
+				<a class="menu__link menu__link--1" href="#">Memorabilia</a>
+				<a class="menu__link menu__link--2" href="#">Collectibles</a>
+				<a class="menu__link menu__link--3" href="#">Vintage</a>
+				<a class="menu__link menu__link--4" href="#">Instruments</a>
+				<a class="menu__link menu__link--5" href="#">Accessories</a>
+				<a class="menu__link menu__link--6" href="#">Equipment</a>
+				<a class="menu__link menu__link--7" href="#">Jewelery</a>
+			</nav>
+			<h2 class="title">line-through</h2>
+			<nav class="menu menu--linethrough">
+				<a class="menu__link menu__link--1" href="#">Models</a>
+				<a class="menu__link menu__link--2" href="#">Services</a>
+				<a class="menu__link menu__link--3" href="#">Technology</a>
+				<a class="menu__link menu__link--4" href="#">Discover</a>
+				<a class="menu__link menu__link--5" href="#">Customize</a>
+				<a class="menu__link menu__link--6" href="#">Financing</a>
+				<a class="menu__link menu__link--7" href="#">Contact</a>
+			</nav>
+			<h2 class="title">two lines</h2>
+			<nav class="menu menu--twolines">
+				<a class="menu__link menu__link--1" href="#">Craft Supplies</a>
+				<a class="menu__link menu__link--2" href="#">Collectibles</a>
+				<a class="menu__link menu__link--3" href="#">Vintage</a>
+				<a class="menu__link menu__link--4" href="#">Instruments</a>
+				<a class="menu__link menu__link--5" href="#">Accessories</a>
+				<a class="menu__link menu__link--6" href="#">Tools</a>
+				<a class="menu__link menu__link--7" href="#">Jewelery</a>
+			</nav>
+			<h2 class="title">diagonal</h2>
+			<nav class="menu menu--diagonal">
+				<a class="menu__link menu__link--1" href="#">Clothing</a>
+				<a class="menu__link menu__link--2" href="#">Bestsellers</a>
+				<a class="menu__link menu__link--3" href="#">Workwear</a>
+				<a class="menu__link menu__link--4" href="#">Activewear</a>
+				<a class="menu__link menu__link--5" href="#">Accessories</a>
+				<a class="menu__link menu__link--6" href="#">Marketplace</a>
+				<a class="menu__link menu__link--7" href="#">Brands</a>
+			</nav>
+			<h2 class="title">simple line and text</h2>
+			<nav class="menu menu--line">
+				<a class="menu__link menu__link--1" href="#" data-text>About us</a>
+				<a class="menu__link menu__link--2" href="#" data-text>Showreel</a>
+				<a class="menu__link menu__link--3" href="#" data-text>Portfolio</a>
+				<a class="menu__link menu__link--4" href="#" data-text>Case Studies</a>
+				<a class="menu__link menu__link--5" href="#" data-text>Our Team</a>
+				<a class="menu__link menu__link--6" href="#" data-text>Contact</a>
+				<a class="menu__link menu__link--7" href="#" data-text>Awards</a>
+			</nav>
+		</main>
+		<!-- /container -->
+		<script src="js/index.js"></script>
+	</body>
+</html>
