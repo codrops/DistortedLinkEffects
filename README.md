@@ -9,7 +9,6 @@ A couple of ideas for decorative link distortion effects using SVG filters on li
 [Demo](http://tympanus.net/Development/DistortedLinkEffects/)
 
 
-
 ## Installation
 
 Install dependencies:

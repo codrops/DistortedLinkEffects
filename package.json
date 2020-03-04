@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/codrops/[NAME].git"
+    "url": "git://github.com/codrops/DistortedLinkEffects.git"
   },
   "keywords": [],
   "author": "Codrops",
   "license": "MIT",
-  "homepage": "[URL]",
+  "homepage": "https://tympanus.net/Development/DistortedLinkEffects/",
   "bugs": {
-    "url": "https://github.com/codrops/[NAME]/issues"
+    "url": "https://github.com/codrops/DistortedLinkEffects/issues"
   },
   "dependencies": {
     "gsap": "^3.2.2",
