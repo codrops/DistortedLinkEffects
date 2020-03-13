@@ -99,15 +99,12 @@ main {
     position: relative;
     line-height: 1;
     color: var(--color-menu-link);
+    margin-bottom: 2.5rem;
 }
 
 .menu__link:focus,
 .menu__link:hover {
     color: var(--color-menu-link-hover);
-}
-
-.menu__link {
-    margin-bottom: 2.5rem;
 }
 
 .menu__link-inner {
